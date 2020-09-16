@@ -1,7 +1,13 @@
+var path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+    entry: './src/index.js',
+    output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'index_bundle.js',
+    publicPath: '/'
+    },
     module: {
         rules: [
             {
@@ -18,8 +24,20 @@ module.exports = {
                         loader: "html-loader"
                     }
                 ]
-            }
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.js$/,
+                enforce: 'pre',
+                use: ['source-map-loader'],
+            },
         ]
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
