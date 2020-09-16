@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-const App = () => {
-    return <h1>Hello World!</h1>;
-};
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
 
 const container = document.getElementById("root");
-container ? ReactDOM.render(<App />, container) : false;
+container ? ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>, 
+    container) : false;
 
