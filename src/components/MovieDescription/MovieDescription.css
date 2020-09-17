@@ -1,0 +1,5 @@
+.movie-description {
+    font-weight: 300;
+    font-size: var(--font-14);
+    margin: 1rem 0;
+}
