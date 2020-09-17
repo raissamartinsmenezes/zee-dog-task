@@ -5,8 +5,8 @@ import tomato from "../../../assets/tomato.svg"
 const Score = (props) => {
     const { score } = props;
     return (
-        <div className="score">
-            <img src={tomato} className="tomato-icon"/>
+        <div className="score-box">
+            <img src={tomato} className="score-icon"/>
             <p className="score-content">{score}</p>
         </div>
     );

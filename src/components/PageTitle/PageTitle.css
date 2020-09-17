@@ -4,3 +4,9 @@
     font-size: var(--font-40);
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 900px) {
+    .page-title {
+        font-size: var(--font-28);
+    }
+}

@@ -1,12 +1,12 @@
-.score {
+.score-box {
     display: flex;
     align-items: center;
 }
 
-.tomato-icon {
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
+.score-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 0.65rem;
 }
 
 .score-content {
