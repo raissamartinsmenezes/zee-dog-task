@@ -1,0 +1,14 @@
+.card-movie {
+    /* adaptar medidas grid */
+    width: 500px;
+    padding: var(--card-padding);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-card);
+}
+
+.card-movie--title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
