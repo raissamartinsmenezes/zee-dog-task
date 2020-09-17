@@ -1,9 +1,14 @@
 import React from "react";
 import "./GoToFavorites.css";
+import { Link } from "react-router-dom";
 
-const GoToFavorites = (props) => {
-    // const { buttonContent } = props;
-    return <button className="go-to-favorites">Meus Favoritos</button>;
-}
+const GoToFavorites = () => {
+
+    return (
+        <Link to="/favorites">
+            <button className="go-to-favorites">Meus Favoritos</button>
+        </Link>
+    ); 
+};
 
 export default GoToFavorites;

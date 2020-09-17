@@ -1,11 +1,18 @@
 .go-to-favorites {
-    width: 230px;
+    width: 13rem;
     height: 50px; 
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--color-black);
+    color: var(--color-white);
     font-family: var(--font-roboto);
     text-transform: uppercase;
     letter-spacing: var(--letter-space);
     border: none;
     border-radius: var(--border-button);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .go-to-favorites {
+        width: 10rem;
+    }
 }

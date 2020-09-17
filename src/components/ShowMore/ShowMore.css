@@ -1,0 +1,12 @@
+.show-more {
+    width: 110px;
+    padding: 0.2rem;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: var(--font-11);
+    margin-top: 0.5rem;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border-radius: var(--border-button);
+    cursor: pointer;
+}

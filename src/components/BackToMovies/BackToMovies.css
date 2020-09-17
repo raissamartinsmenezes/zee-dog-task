@@ -2,4 +2,7 @@
     text-transform: uppercase;
     font-size: var(--font-14);
     font-weight: 700;
+    cursor: pointer;
+    text-align: center;
 }
+
