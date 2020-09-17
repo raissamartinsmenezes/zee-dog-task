@@ -8,8 +8,10 @@ import BackToMovies from "../../components/BackToMovies/BackToMovies";
 const Detail = () => {
     return (
         <>
-        <BackToMovies />
-        <GoToFavorites />
+        <div className="navbar">
+            <BackToMovies />
+            <GoToFavorites />
+        </div>
         <CardDetail />
         </>
     )

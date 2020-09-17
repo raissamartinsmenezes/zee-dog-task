@@ -8,11 +8,26 @@ import CardMovie from "../../components/CardMovie/CardMovie";
 const Movies = () => {
     return (
         <>
-            <PageTitle 
-                pageTitle="Filme"
-            />
-            <GoToFavorites />
-            <CardMovie />
+            <div className="navbar">
+                <PageTitle 
+                    pageTitle="Filmes"
+                />
+                <GoToFavorites />
+            </div>
+            <div className="card-box">
+                <CardMovie 
+                    hasMovieDescription={true}
+                />
+                <CardMovie 
+                    hasMovieDescription={true}
+                />
+                <CardMovie 
+                    hasMovieDescription={true}
+                />
+                <CardMovie 
+                    hasMovieDescription={true}
+                />
+            </div>
         </>
     )
 }
