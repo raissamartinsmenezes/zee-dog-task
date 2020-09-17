@@ -27,12 +27,6 @@ const CardDetail = (props) => {
                         <MovieDirector 
                             movieDirector="Diretor"
                         />
-                        <MovieProductor 
-                            movieProductor="Produtor"
-                        />
-                        <MovieYear 
-                            movieYear="1994"
-                        />
                     </div>
                 </div>
                 <Score 
@@ -41,6 +35,12 @@ const CardDetail = (props) => {
             </div>
             <MovieDescription 
                 movieDescription={lorem}
+            />
+            <MovieProductor 
+                movieProductor="Produtor"
+            />
+            <MovieYear 
+                movieYear="1994"
             />
             <CharactersTitle />
             <MovieCharacter 

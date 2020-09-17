@@ -1,8 +1,8 @@
 .card-movie {
     /* adaptar medidas grid */
-    width: 500px;
-    padding: var(--card-padding);
-    background-color: var(--white);
+    width: 100%;
+    padding: var(--padding-card);
+    background-color: var(--color-white);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-card);
 }
@@ -12,3 +12,4 @@
     justify-content: space-between;
     align-items: center;
 }
+
