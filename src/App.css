@@ -8,29 +8,66 @@
 }
 
 :root {
-    --bg-color: #FAFAFA;
-    --white: #FFFFFF;
-    --black: #0A0A0B;
-    --red: #CC0C0C;
-    --grey: #E2E2E2;
+    --color-bg: #FAFAFA;
+    --color-white: #FFFFFF;
+    --color-black: #0A0A0B;
+    --color-red: #CC0C0C;
+    --color-grey: #E2E2E2;
     --box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
     --font-roboto: 'Roboto', sans-serif;
+    --font-11: 0.68rem;
     --font-13: 0.81rem;
     --font-14: 0.87rem;
     --font-16: 1.25rem;
+    --font-28: 1.75rem;
     --font-40: 2.5rem;
     --letter-space: 0.15rem;
     --border-button: 0.3rem;
     --border-card: 0.5rem;
-    --card-padding: 1.5rem;
+    --padding-card: 1.5rem;
+    --margin-horizontal: 1.25rem;
+    --margin-vertical: 1.25rem;
 }
 
 html {
-    background-color: var(--bg-color);
+    background-color: var(--color-bg);
     font-family: var(--font-roboto);
     font-size: var(--font-16);
-    color: var(--black);
+    color: var(--color-black);
 }
+
+button {
+    background-color: transparent;
+    border: none;
+    outline-style: none;
+}
+
+.container {
+    width: 70%;
+    margin: 10vh auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--margin-vertical);
+}
+
+.card-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+    .card-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
 
 

@@ -9,7 +9,7 @@ import Favorites from "./pages/Favorites/Favorites";
 
 const App = () => {
   return (
-    <React.Fragment>
+    <div className="container">
       <Router>
         <Switch>
           <Route path='/' exact component={Movies}/>
@@ -17,7 +17,7 @@ const App = () => {
           <Route path='/favorites' component={Favorites}/>
         </Switch>
       </Router>
-    </React.Fragment>
+    </div>
   );
 }
 
