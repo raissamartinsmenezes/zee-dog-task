@@ -1,9 +1,19 @@
 import React from "react";
 import "./Favorites.css";
 
+import PageTitle from "../../components/PageTitle/PageTitle";
+import BackToMovies from "../../components/BackToMovies/BackToMovies";
+import CardFavorite from "../../components/CardFavorite/CardFavorite";
+
 const Favorites = () => {
     return (
-        <div className="favorites"></div>
+        <>
+            <PageTitle 
+                pageTitle="Meus Favoritos"
+            />
+            <BackToMovies />
+            <CardFavorite />
+        </>
     )
 }
 
