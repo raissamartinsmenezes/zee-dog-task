@@ -1,0 +1,14 @@
+.score {
+    display: flex;
+    align-items: center;
+}
+
+.tomato-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.score-content {
+    font-size: var(--font-40);
+}
