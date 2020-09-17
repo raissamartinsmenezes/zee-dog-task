@@ -1,0 +1,6 @@
+.page-title {
+    color: var(--black);
+    font-weight: 300;
+    font-size: var(--font-40);
+    text-transform: uppercase;
+}
