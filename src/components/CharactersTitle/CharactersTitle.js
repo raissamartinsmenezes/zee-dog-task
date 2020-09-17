@@ -5,7 +5,7 @@ const CharactersTitle = () => {
     return (
         <div className="characters-box">
             <p className="characters-title">Personagens</p>
-            <div className="line"></div>
+            <div className="characters-line"></div>
         </div>
     );
 }
