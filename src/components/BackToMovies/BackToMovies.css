@@ -1,0 +1,5 @@
+.back-to-movies {
+    text-transform: uppercase;
+    font-size: var(--font-14);
+    font-weight: 700;
+}

@@ -1,0 +1,11 @@
+.go-to-favorites {
+    width: 230px;
+    height: 50px; 
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--font-roboto);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-space);
+    border: none;
+    border-radius: var(--border-button);
+}
