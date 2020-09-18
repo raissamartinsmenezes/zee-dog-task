@@ -39,7 +39,7 @@ export const fetchMovies = () => async (dispatch) => {
     try {
         const request = await fetch(baseUrl);
         const requestSuccess = await request.json();
-        dispatch(getMoviesSuccess(requestSuccess.results));
+        dispatch(getMoviesSuccess(requestSuccess));
     } catch (error) {
         dispatch(getMoviesFailure(error.toString()));
     }
