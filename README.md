@@ -27,11 +27,11 @@ Restrições Técnicas | Feito
 ------------ | ------
 Projeto deve ser 100% responsivo | ✔️
 Não utilizar nenhuma biblioteca ou framework CSS | ✔️
-Utilizar React e Redux | ❌
+Utilizar React e Redux | ✔️
 Não utilizar create-react-app e criar sua configuração para o webpack | ✔️
-Utilize sempre functional components com hooks | ❌
+Utilize sempre functional components com hooks | ✔️
 Utilize react-router-dom para rotas | ✔️
-Hospedar o projeto no Netlify ou Vercel | ❌
+Hospedar o projeto no Netlify ou Vercel | ✔️
 Layout bem estruturado, com atenção à experiência do usuário | ✔️
 
 ### Diferenciais
