@@ -1,17 +1,49 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+const baseUrl = "https://ghibliapi.herokuapp.com/films"
+
+const initialState = {
+    moviesList: [],
+    isLoading: true,
+    error: null,
+  };
+
 const moviesSlice = createSlice({
     name: 'movies',
-    initialState:  {
-        "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
-        "title": "Castle in the Sky",
-        "description": "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
-        "director": "Hayao Miyazaki",
-        "producer": "Isao Takahata",
-        "release_date": "1986",
-        "rt_score": "95"
-    },
-    reducers: {}
+    initialState,
+    reducers: {
+        getMovies: (state) => {
+            state.isLoading = true;
+            state.error = null;
+        },
+        getMoviesSuccess: (state, actions) => {
+            state.moviesList = actions.payload;
+            state.isLoading = false;
+            state.error = null;
+        },
+        getMoviesFailure: (state, actions) => {
+            state.isLoading = false;
+            state.error = actions.payload;
+        },
+    }
 });
 
+export const {
+    getMovies,
+    getMoviesSuccess,
+    getMoviesFailure,
+} = moviesSlice.actions;
+
+export const fetchMovies = () => async (dispatch) => {
+    dispatch(getMovies());
+    try {
+        const request = await fetch(baseUrl);
+        const requestSuccess = await request.json();
+        dispatch(getMoviesSuccess(requestSuccess.results));
+    } catch (error) {
+        dispatch(getMoviesFailure(error.toString()));
+    }
+};
+
 export default moviesSlice.reducer;
+
