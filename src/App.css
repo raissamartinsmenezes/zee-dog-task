@@ -62,7 +62,7 @@ button {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
     .card-box {
         grid-template-columns: 1fr;
     }
