@@ -20,5 +20,5 @@
 }
 
 .card-detail--favorite > div {
-    margin-left: var(--margin-horizontal);
+    margin-left: 0.65rem;
 }

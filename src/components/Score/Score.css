@@ -4,11 +4,21 @@
 }
 
 .score-icon {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     margin-right: 0.65rem;
 }
 
 .score-content {
-    font-size: var(--font-40);
+    font-size: var(--font-28);
+}
+
+@media (max-width: 450px) {
+    .score-box {
+        flex-direction: column;
+    }
+
+    .score-icon {
+        margin-right: 0;
+    }
 }

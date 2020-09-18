@@ -6,3 +6,8 @@
     text-align: center;
 }
 
+@media (max-width: 450px) {
+    .back-to-movies {
+        font-size: var(--font-11);
+    }
+}

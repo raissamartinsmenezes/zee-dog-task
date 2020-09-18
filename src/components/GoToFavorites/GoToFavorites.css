@@ -11,8 +11,14 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
     .go-to-favorites {
         width: 10rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .go-to-favorites {
+        width: 6rem;
     }
 }

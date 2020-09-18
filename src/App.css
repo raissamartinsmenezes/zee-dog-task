@@ -19,6 +19,7 @@
     --font-13: 0.81rem;
     --font-14: 0.87rem;
     --font-16: 1.25rem;
+    --font-22: 1.37rem;
     --font-28: 1.75rem;
     --font-40: 2.5rem;
     --letter-space: 0.15rem;
@@ -56,7 +57,7 @@ button {
 
 .card-box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 35px;
     justify-content: space-between;
 }
