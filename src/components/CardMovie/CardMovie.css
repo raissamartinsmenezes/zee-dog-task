@@ -1,5 +1,7 @@
 .card-movie {
-    /* adaptar medidas grid */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     padding: var(--padding-card);
     background-color: var(--color-white);
