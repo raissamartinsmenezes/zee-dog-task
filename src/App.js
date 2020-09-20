@@ -11,9 +11,9 @@ const App = () => {
     <div className="container">
       <Router>
         <Switch>
-          <Route path='/' exact component={Movies}/>
-          <Route path='/detail' component={Detail}/>
-          <Route path='/favorites' component={Favorites}/>
+          <Route path="/" exact component={Movies}/>
+          <Route path="/detail/:id" component={Detail}/>
+          <Route path="/favorites" component={Favorites}/>
         </Switch>
       </Router>
     </div>

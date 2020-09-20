@@ -5,7 +5,12 @@ import CardDetail from "../../components/CardDetail/CardDetail";
 import GoToFavorites from "../../components/GoToFavorites/GoToFavorites";
 import BackToMovies from "../../components/BackToMovies/BackToMovies";
 
-const Detail = () => {
+const Detail = (location) => {
+    const id = location.location.state.movieId;
+    console.log(id);
+
+    
+
     return (
         <>
         <div className="navbar">

@@ -17,8 +17,6 @@ const Movies = () => {
         dispatch(fetchMovies());
     }, []);
 
-    console.log(isLoading);
-
     // const countSkeleton = () => {
     //    return moviesList.length ? moviesList.length : 4; 
     // }
@@ -39,6 +37,7 @@ const Movies = () => {
                         title={movie.title}
                         director={movie.director} 
                         description={movie.description}
+                        id={movie.id}
                         hasMovieDescription={true}
                     />
                 ))}
