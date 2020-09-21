@@ -2,9 +2,9 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import Movies from "./pages/Movies/Movies";
-import Detail from "./pages/Detail/Detail";
-import Favorites from "./pages/Favorites/Favorites";
+import Movies from "./pages/movies/Movies";
+import Detail from "./pages/detail/Detail";
+import Favorites from "./pages/favorites/Favorites";
 
 const App = () => {
   return (

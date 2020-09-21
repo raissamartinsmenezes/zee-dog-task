@@ -11,11 +11,8 @@ import { fetchMovies } from "../../store/slices/moviesSlice";
 
 const Movies = () => {
     const movies = useSelector(state => state.movies);
-    const favorites = useSelector(state => state.favorites);
     const { moviesList, isLoading, error } = movies;
     const dispatch = useDispatch();
-
-    console.log(favorites);
 
     useEffect(() => {
         dispatch(fetchMovies());
@@ -35,10 +32,6 @@ const Movies = () => {
                     <CardMovie
                         key={movie.id}
                         movie={movie}
-                        // title={movie.title}
-                        // director={movie.director} 
-                        // description={movie.description}
-                        // id={movie.id}
                         hasMovieDescription={true}
                     />
                 ))}

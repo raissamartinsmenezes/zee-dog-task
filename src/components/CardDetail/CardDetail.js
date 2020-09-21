@@ -42,11 +42,11 @@ const CardDetail = (props) => {
                 movieYear={movie.release_date}
             />
             <CharactersTitle />
-            {people.map((character) => {
+            {people.map((character) => (
                 <MovieCharacter 
                     movieCharacter={character.name}
                 />
-            })}
+            ))}
         </div>
     ) 
 };

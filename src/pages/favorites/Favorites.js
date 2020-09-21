@@ -8,7 +8,7 @@ import CardMovie from "../../components/CardMovie/CardMovie";
 
 const Favorites = () => {
     const favorites = useSelector(state => state.favorites);
-    console.log(favorites[0]);
+    console.log(favorites);
 
     return (
         <>
@@ -19,12 +19,12 @@ const Favorites = () => {
             <BackToMovies />
         </div>
         <div className="card-box">
-            {favorites.map((movie) => {
+            {favorites.map((movie) => (
                 <CardMovie 
                     movie={movie}
                     hasMovieDescription={false}
                 />
-            })}
+            ))}
         </div>
         </>
     )
