@@ -6,20 +6,20 @@
 
 PÁGINA 1 | Feito
 ------------ | ------
-Crie uma lista para exibir os filmes, mostrando o nome, descrição, diretor e um botão para favoritar o filme | ❌
-Na lista de filmes, o usuário poderá clicar em um filme e entrar na tela de detalhes | ❌
+Crie uma lista para exibir os filmes, mostrando o nome, descrição, diretor e um botão para favoritar o filme | ✔️
+Na lista de filmes, o usuário poderá clicar em um filme e entrar na tela de detalhes | ✔️
 
 PÁGINA 2 | Feito
 ------------ | ------
-A tela de detalhes deverá apresentar: Nome, descrição, diretor, produtores, ano de lançamento e a nota no Rotten Tomatoes | ❌
-A tela de detalhes deverá apresentar uma lista de todos os personagens do respectivo filme | ❌
-Edição persistente (local) dos campos presentes em um filme | ❌
+A tela de detalhes deverá apresentar: Nome, descrição, diretor, produtores, ano de lançamento e a nota no Rotten Tomatoes | ✔️
+A tela de detalhes deverá apresentar uma lista de todos os personagens do respectivo filme | ⚠️
+Edição persistente (local) dos campos presentes em um filme | ✔️
 
 PÁGINA 3 | Feito
 ------------ | ------
-Página de favoritos com a listagem de todos os filmes favoritados | ❌
-Botão para remover filme dos favoritos | ❌
-Ao clicar no filme, ir para Página 2 | ❌
+Página de favoritos com a listagem de todos os filmes favoritados | ⚠️
+Botão para remover filme dos favoritos | ⚠️
+Ao clicar no filme, ir para Página 2 | ✔️
 
 ### Restrições
 
