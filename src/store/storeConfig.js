@@ -4,16 +4,18 @@ import storage from "redux-persist/lib/storage";
 
 import movies from "./slices/moviesSlice";
 import people from "./slices/peopleSlice";
+import favorites from "./slices/favoritesSlice";
 
 const reducers = combineReducers({
   movies,
-  people
+  people,
+  favorites,
 });
 
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["movies"]
+  whitelist: ["movies", "favorites"]
 };
 
 const persistedReducer = persistReducer(persistConfig, reducers);
