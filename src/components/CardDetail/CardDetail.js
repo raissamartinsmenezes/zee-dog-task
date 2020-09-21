@@ -13,13 +13,12 @@ import Score from "../Score/Score";
 
 const CardDetail = (props) => {
     const { movie, people } = props;
-    console.log({movie, people});
 
     return (
         <div className="card-detail">
             <div className="card-detail--title">
                 <div className="card-detail--favorite">
-                    <FavoriteButton />
+                    <FavoriteButton movie={movie}/>
                     <div>
                         <MovieName 
                             movieName={movie.title}

@@ -1,15 +1,24 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import "./FavoriteButton.css";
 import redHeart from "../../../assets/red-heart.svg";
 import greyHeart from "../../../assets/grey-heart.svg";
 
-const FavoriteButton = () => {
+import { addMovieToFavorites, removeMovieFromFavorites } from "../../store/slices/favoritesSlice";
+
+const FavoriteButton = (props) => {
+    const { movie } = props;
     const [isFavorite, setIsFavorite] = useState(false);
+    const dispatch = useDispatch();
 
     const onHandleClickButton = () => {
         setIsFavorite(true);
-        if (isFavorite === true) setIsFavorite(false);
-    }   
+        dispatch(addMovieToFavorites(movie));
+        if (isFavorite === true) {
+            setIsFavorite(false);
+            dispatch(removeMovieFromFavorites(movie));
+        } 
+    } 
 
     return (
         <button onClick={onHandleClickButton}>
