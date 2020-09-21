@@ -12,15 +12,6 @@ const FavoriteButton = (props) => {
     const [isFavorite, setIsFavorite] = useState(false);
     const dispatch = useDispatch();
 
-    console.log(favorites);
-
-    // const favoritedMovie = {
-    //     movie: movie,
-    //     isMovieFavorite: true,
-    // };
-
-    console.log(movie);
-
     const onHandleClickButton = () => {
         setIsFavorite(true);
         dispatch(addMovieToFavorites(movie));
@@ -31,12 +22,11 @@ const FavoriteButton = (props) => {
     } 
     
     useEffect(() => {
-        if(favorites.find((favorite) => favorite.id === movie.id)) {
-            return setIsFavorite(true);
-        } else {
-            return setIsFavorite(false);
+        if(favorites) {
+            const isMovieFavorited = favorites.find((favorite) => favorite.id === movie.id);
+            isMovieFavorited ? setIsFavorite(true) : setIsFavorite(false);
         }
-    }, []);
+    }, [favorites, movie]);
 
     return (
         <button onClick={onHandleClickButton}>
