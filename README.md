@@ -1,4 +1,4 @@
-# Zee.dog Task
+# Zee.dog Task [![Netlify Status](https://api.netlify.com/api/v1/badges/d7098c4a-f3c3-447e-8478-21c74194e82c/deploy-status)](https://app.netlify.com/sites/zee-dog-test/deploys)
 
 ## Requisitos 
 
@@ -12,13 +12,13 @@ Na lista de filmes, o usuário poderá clicar em um filme e entrar na tela de de
 PÁGINA 2 | Feito
 ------------ | ------
 A tela de detalhes deverá apresentar: Nome, descrição, diretor, produtores, ano de lançamento e a nota no Rotten Tomatoes | ✔️
-A tela de detalhes deverá apresentar uma lista de todos os personagens do respectivo filme | ⚠️
+A tela de detalhes deverá apresentar uma lista de todos os personagens do respectivo filme | ✔️
 Edição persistente (local) dos campos presentes em um filme | ✔️
 
 PÁGINA 3 | Feito
 ------------ | ------
-Página de favoritos com a listagem de todos os filmes favoritados | ⚠️
-Botão para remover filme dos favoritos | ⚠️
+Página de favoritos com a listagem de todos os filmes favoritados | ✔️
+Botão para remover filme dos favoritos | ✔️
 Ao clicar no filme, ir para Página 2 | ✔️
 
 ### Restrições
