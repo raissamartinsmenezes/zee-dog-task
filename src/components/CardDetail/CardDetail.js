@@ -11,10 +11,10 @@ import CharactersTitle from "../CharactersTitle/CharactersTitle";
 import FavoriteButton from "../FavoriteButton/FavoriteButton";
 import Score from "../Score/Score";
 
-const lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
 const CardDetail = (props) => {
-    // const { buttonContent } = props;
+    const { movie, people } = props;
+    console.log({movie, people});
+
     return (
         <div className="card-detail">
             <div className="card-detail--title">
@@ -22,44 +22,34 @@ const CardDetail = (props) => {
                     <FavoriteButton />
                     <div>
                         <MovieName 
-                            movieName="Nome do Filme"
+                            movieName={movie.title}
                         />
                         <MovieDirector 
-                            movieDirector="Diretor"
+                            movieDirector={movie.director}
                         />
                     </div>
                 </div>
                 <Score 
-                    score="7.4"
+                    score={movie.rt_score}
                 />
             </div>
             <MovieDescription 
-                movieDescription={lorem}
+                movieDescription={movie.description}
             />
             <MovieProductor 
-                movieProductor="Produtor"
+                movieProductor={movie.producer}
             />
             <MovieYear 
-                movieYear="1994"
+                movieYear={movie.release_date}
             />
             <CharactersTitle />
-            <MovieCharacter 
-                movieCharacter="Personagem"
-            />
-            <MovieCharacter 
-                movieCharacter="Personagem"
-            />
-            <MovieCharacter 
-                movieCharacter="Personagem"
-            />
-            <MovieCharacter 
-                movieCharacter="Personagem"
-            />
-            <MovieCharacter 
-                movieCharacter="Personagem"
-            />
+            {people.map((character) => {
+                <MovieCharacter 
+                    movieCharacter={character.name}
+                />
+            })}
         </div>
     ) 
-}
+};
 
 export default CardDetail;
