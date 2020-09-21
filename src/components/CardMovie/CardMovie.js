@@ -1,6 +1,5 @@
 import React from "react";
 import "./CardMovie.css";
-import { Link } from "react-router-dom";
 
 import MovieName from "../MovieName/MovieName";
 import MovieDirector from "../MovieDirector/MovieDirector";
@@ -9,7 +8,7 @@ import FavoriteButton from "../FavoriteButton/FavoriteButton";
 import ShowMore from "../ShowMore/ShowMore";
 
 const CardMovie = (props) => {
-    const { hasMovieDescription, title, director, description, id } = props;
+    const { hasMovieDescription, movie } = props;
    
     return ( 
         <div className="card-movie">
@@ -17,20 +16,20 @@ const CardMovie = (props) => {
                 <div className="card-movie--title">
                     <div>
                         <MovieName 
-                             movieName={title}
+                             movieName={movie.title}
                         />
                         <MovieDirector
-                            movieDirector={director}
+                            movieDirector={movie.director}
                         />
                     </div>
-                    <FavoriteButton />
+                    <FavoriteButton movie={movie}/>
                 </div>
                 { hasMovieDescription ? 
                 <MovieDescription
-                    movieDescription={description}
+                    movieDescription={movie.description}
                 /> : null }
             </div>
-                <ShowMore id={id} />
+                <ShowMore id={movie.id} />
         </div>
     );
 };

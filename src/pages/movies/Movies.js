@@ -1,25 +1,25 @@
 import React, { useEffect } from "react";
-import "./Movies.css";
-import { useSelector, useDispatch } from "react-redux"; 
+import { useSelector, useDispatch } from "react-redux";
+import "./Movies.css"; 
 
 import PageTitle from "../../components/PageTitle/PageTitle";
 import GoToFavorites from "../../components/GoToFavorites/GoToFavorites";
 import CardMovie from "../../components/CardMovie/CardMovie";
-import { fetchMovies } from "../../store/slices/moviesSlice";
 import SkeletonLoading from "../../components/SkeletonLoading/SkeletonLoading";
+
+import { fetchMovies } from "../../store/slices/moviesSlice";
 
 const Movies = () => {
     const movies = useSelector(state => state.movies);
-    const { moviesList, isLoading } = movies;
+    const favorites = useSelector(state => state.favorites);
+    const { moviesList, isLoading, error } = movies;
     const dispatch = useDispatch();
+
+    console.log(favorites);
 
     useEffect(() => {
         dispatch(fetchMovies());
     }, []);
-
-    // const countSkeleton = () => {
-    //    return moviesList.length ? moviesList.length : 4; 
-    // }
 
     return (
         <>
@@ -34,10 +34,11 @@ const Movies = () => {
                 moviesList.map((movie) => (
                     <CardMovie
                         key={movie.id}
-                        title={movie.title}
-                        director={movie.director} 
-                        description={movie.description}
-                        id={movie.id}
+                        movie={movie}
+                        // title={movie.title}
+                        // director={movie.director} 
+                        // description={movie.description}
+                        // id={movie.id}
                         hasMovieDescription={true}
                     />
                 ))}
