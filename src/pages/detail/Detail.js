@@ -11,7 +11,6 @@ const selectMovieById = (id) => (state) => state.movies.moviesList.find((movie) 
 
 const selectPeopleByMovieId = (id) => (state) => {
     const { peopleList } = state.people;
-    console.log(peopleList);
     return peopleList.filter((person) => person.films.find(film => film.split("/")[4] === id));
 }; 
 
@@ -21,8 +20,6 @@ const Detail = (location) => {
     // const movie = useSelector(state => state.movies.moviesList.find((movie) => movie.id === id));
     const people = useSelector(selectPeopleByMovieId(id));
     const dispatch = useDispatch();
-
-    console.log(people);
 
     // const movie = useMemo(() => {
     //     const movieFiltered = moviesList.find((movie) => movie.id === id);  
