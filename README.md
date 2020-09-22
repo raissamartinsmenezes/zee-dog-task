@@ -138,7 +138,7 @@ yarn test
 ou então rode:
 
 ```
-npm install
+npm test
 ```
 se você estiver usando [npm](https://www.npmjs.com/) como gerenciador de pacotes.
 
