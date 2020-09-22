@@ -1,4 +1,5 @@
 import React from "react";
+import "./MovieName.css";
 
 const MovieName = (props) => {
     const { movieName } = props;

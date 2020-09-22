@@ -1,0 +1,10 @@
+.movie-name {
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .movie-name {
+      font-size: var(--font-14);
+      font-weight: 500;
+  }
+}
