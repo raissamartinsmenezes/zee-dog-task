@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect } from "react";
 import "./Detail.css";
 import { useSelector, useDispatch } from "react-redux"; 
 
@@ -17,42 +17,12 @@ const selectPeopleByMovieId = (id) => (state) => {
 const Detail = (location) => {
     const id = location.location.state.movieId;
     const movie = useSelector(selectMovieById(id));
-    // const movie = useSelector(state => state.movies.moviesList.find((movie) => movie.id === id));
     const people = useSelector(selectPeopleByMovieId(id));
     const dispatch = useDispatch();
-
-    // const movie = useMemo(() => {
-    //     const movieFiltered = moviesList.find((movie) => movie.id === id);  
-    //     return movieFiltered;  
-    // }, [moviesList]);
-
-    // const getMovieById = () => {
-    //     const movieFiltered = moviesList.find((movie) => movie.id === id);  
-    //     return movieFiltered;  
-    // };
-
-    // const getCharactersByMovieId = () => {
-    //     peopleList.filter((people => { 
-    //         return people.films.find(film => film.split("/")[4] === id);
-    //     }));
-    // };
-
-    // console.log(getCharactersByMovieId());
-
-    // useEffect(() => {
-    //     if(movies){
-    //         const movieResult = getMovieById();
-    //         setMovie(movieResult);
-    //     }     
-    // }, [movies]);
 
     useEffect(() => {
         dispatch(fetchPeople());
     }, []);
-
-    // useEffect(() => {
-    //     getCharactersByMovieId();
-    // }, [people]);
 
     return (
         <>
