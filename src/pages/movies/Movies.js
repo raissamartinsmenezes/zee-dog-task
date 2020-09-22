@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import "./Movies.css"; 
+import { useSelector, useDispatch } from "react-redux"; 
 
 import PageTitle from "../../components/PageTitle/PageTitle";
 import GoToFavorites from "../../components/GoToFavorites/GoToFavorites";

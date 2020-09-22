@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import "./Detail.css"; 
 
 import CardDetail from "../../components/CardDetail/CardDetail";
 import GoToFavorites from "../../components/GoToFavorites/GoToFavorites";

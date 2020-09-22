@@ -10,6 +10,6 @@ const Score = (props) => {
             <p className="score-content">{score}</p>
         </div>
     );
-}
+};
 
 export default Score;

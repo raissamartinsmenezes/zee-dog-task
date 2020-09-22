@@ -11,9 +11,9 @@ const container = document.getElementById("root");
 container ? ReactDOM.render(
     <Provider store={store}>
         <PersistGate persistor={persistor}>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
         </PersistGate>
     </Provider>, 
     container) : false;

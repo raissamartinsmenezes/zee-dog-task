@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const baseUrl = "https://ghibliapi.herokuapp.com/films"
+const baseUrl = "https://ghibliapi.herokuapp.com/films";
 
 const initialState = {
     moviesList: [],

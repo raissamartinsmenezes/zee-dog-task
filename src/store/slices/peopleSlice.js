@@ -1,12 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const baseUrl = "https://ghibliapi.herokuapp.com/people"
+const baseUrl = "https://ghibliapi.herokuapp.com/people";
 
 const initialState = {
     peopleList: [],
     isLoading: true,
     error: null,
-  };
+};
 
 const peopleSlice = createSlice({
     name: 'people',
