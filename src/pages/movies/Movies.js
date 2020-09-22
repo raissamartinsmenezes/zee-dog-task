@@ -22,7 +22,7 @@ const Movies = () => {
         <>
             <div className="navbar">
                 <PageTitle 
-                    pageTitle="Filmes"
+                    pageTitle="Movies"
                 />
                 <GoToFavorites />
             </div>
@@ -38,6 +38,6 @@ const Movies = () => {
             </div>
         </>
     );
-}
+};
 
 export default Movies;

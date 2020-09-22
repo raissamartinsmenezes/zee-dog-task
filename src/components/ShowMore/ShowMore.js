@@ -1,6 +1,6 @@
 import React from "react";
-import "./ShowMore.css";
 import { Link } from "react-router-dom";
+import "./ShowMore.css";
 
 const ShowMore = (props) => {
     const { id } = props;
@@ -10,7 +10,7 @@ const ShowMore = (props) => {
             pathname: `/detail/${id}`,
             state: {movieId: id},
         }} style={{ textDecoration: "none", color: "#0A0A0B" }}>
-            <button className="show-more">Ver Mais →</button>
+            <button className="show-more">See More →</button>
         </Link>
     ); 
 };

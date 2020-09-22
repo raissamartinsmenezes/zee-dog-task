@@ -14,7 +14,7 @@ const Favorites = () => {
         <>
         <div className="navbar">
             <PageTitle 
-                pageTitle="Meus Favoritos"
+                pageTitle="My Favorites"
             />
             <BackToMovies />
         </div>
@@ -29,6 +29,6 @@ const Favorites = () => {
         </div>
         </>
     )
-}
+};
 
 export default Favorites;
