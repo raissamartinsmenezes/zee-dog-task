@@ -1,6 +1,6 @@
 import React from "react";
-import "../CardMovie/CardMovie.css";
 import Skeleton from "react-loading-skeleton";
+import greyHeart from "../../../assets/grey-heart.svg";
 
 const SkeletonLoading = (props) => {
     const { totalSkeleton } = props;
@@ -11,17 +11,20 @@ const SkeletonLoading = (props) => {
                 <div>
                     <div className="card-movie--title">
                         <div>
-                            <Skeleton height={50} width={200}/>
+                            <Skeleton height={50} width={100}/>
+                            <Skeleton height={50} width={50}/>
                         </div>
-                        <Skeleton height={50} width={50}/>
+                        <img src={greyHeart} className="favorite-button"/>
                     </div>
-                    <Skeleton height={20} width={350}/>
-                    <Skeleton height={20} width={350}/>
-                    <Skeleton height={20} width={350}/>
-                    <Skeleton height={20} width={350}/>
-                    <Skeleton height={20} width={350}/>
-                    <Skeleton height={20} width={350}/>
-                    <Skeleton height={20} width={350}/>
+                    <div className="movie-description">
+                        <Skeleton height={20} width={250}/>
+                        <Skeleton height={20} width={250}/>
+                        <Skeleton height={20} width={250}/>
+                        <Skeleton height={20} width={250}/>
+                        <Skeleton height={20} width={250}/>
+                        <Skeleton height={20} width={250}/>
+                        <Skeleton height={20} width={250}/>
+                    </div>
                 </div>
                 <Skeleton height={30} width={100}/>
             </div>
