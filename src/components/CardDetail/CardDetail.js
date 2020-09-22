@@ -3,7 +3,7 @@ import "./CardDetail.css";
 
 import MovieName from "../MovieName/MovieName";
 import MovieDirector from "../MovieDirector/MovieDirector";
-import MovieProductor from "../MovieProductor/MovieProductor";
+import MovieProducer from "../MovieProducer/MovieProducer";
 import MovieYear from "../MovieYear/MovieYear";
 import MovieDescription from "../MovieDescription/MovieDescription";
 import MovieCharacter from "../MovieCharacter/MovieCharacter";
@@ -35,8 +35,8 @@ const CardDetail = (props) => {
             <MovieDescription 
                 movieDescription={movie.description}
             />
-            <MovieProductor 
-                movieProductor={movie.producer}
+            <MovieProducer 
+                movieProducer={movie.producer}
             />
             <MovieYear 
                 movieYear={movie.release_date}
