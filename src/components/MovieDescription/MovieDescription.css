@@ -2,14 +2,9 @@
     font-weight: 300;
     font-size: var(--font-14);
     margin: var(--margin-vertical) 0;
-}
-
-@media (max-width: 640px) {
-    .movie-description {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 7;
-        -webkit-box-orient: vertical;
-    }
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
 }
