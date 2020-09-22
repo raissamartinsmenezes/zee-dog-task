@@ -10,6 +10,7 @@ import MovieCharacter from "../MovieCharacter/MovieCharacter";
 import CharactersTitle from "../CharactersTitle/CharactersTitle";
 import FavoriteButton from "../FavoriteButton/FavoriteButton";
 import Score from "../Score/Score";
+import ErrorBox from "../ErrorBox/ErrorBox";
 
 const CardDetail = (props) => {
     const { movie, people } = props;
@@ -47,6 +48,7 @@ const CardDetail = (props) => {
                     movieCharacter={character.name}
                 />
             ))}
+            {people.length === 0 && <ErrorBox errorContent="🎬 Oops! We did not find the characters in our database :/" />}
         </div>
     ) 
 };

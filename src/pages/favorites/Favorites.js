@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import PageTitle from "../../components/PageTitle/PageTitle";
 import BackToMovies from "../../components/BackToMovies/BackToMovies";
 import CardMovie from "../../components/CardMovie/CardMovie";
+import ErrorBox from "../../components/ErrorBox/ErrorBox";
 
 const Favorites = () => {
     const favorites = useSelector(state => state.favorites);
@@ -24,8 +25,8 @@ const Favorites = () => {
                     hasMovieDescription={false}
                 />
             ))}
-            {favorites.length === 0 && <div>não há favoritos</div>}
         </div>
+        {favorites.length === 0 && <ErrorBox errorContent="Oops! You don't have any favorite movies yet, click the heart to favorite ❤️" />}
         </>
     )
 };
