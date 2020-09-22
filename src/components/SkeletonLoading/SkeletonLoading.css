@@ -1,0 +1,6 @@
+.skeleton-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: var(--margin-vertical) 0;
+}

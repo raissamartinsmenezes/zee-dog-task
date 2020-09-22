@@ -1,8 +1,9 @@
 import React from "react";
 import Skeleton from "react-loading-skeleton";
+import "./SkeletonLoading.css";
 import greyHeart from "../../../assets/grey-heart.svg";
 
-const SkeletonLoading = (props) => {
+const SkeletonLoading = () => {
     return (
             <div className="card-movie">
                 <div>
@@ -12,14 +13,14 @@ const SkeletonLoading = (props) => {
                         </div>
                         <img src={greyHeart} className="favorite-button"/>
                     </div>
-                    <div className="movie-description">
-                        <Skeleton height={20} width={200}/>
-                        <Skeleton height={20} width={200}/>
-                        <Skeleton height={20} width={200}/>
-                        <Skeleton height={20} width={200}/>
-                        <Skeleton height={20} width={200}/>
-                        <Skeleton height={20} width={200}/>
-                        <Skeleton height={20} width={200}/>
+                    <div className="skeleton-description">
+                        <Skeleton height={20} width={230}/>
+                        <Skeleton height={20} width={230}/>
+                        <Skeleton height={20} width={230}/>
+                        <Skeleton height={20} width={230}/>
+                        <Skeleton height={20} width={230}/>
+                        <Skeleton height={20} width={230}/>
+                        <Skeleton height={20} width={230}/>
                     </div>
                 </div>
                 <Skeleton height={30} width={100}/>
