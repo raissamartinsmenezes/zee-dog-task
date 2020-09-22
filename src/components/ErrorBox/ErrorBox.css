@@ -1,0 +1,6 @@
+.error-box {
+  color: var(--color-black);
+  padding: 0.2rem;
+  font-size: var(--font-13);
+  font-weight: 500;
+}
