@@ -8,7 +8,6 @@ import ErrorBox from "../../components/ErrorBox/ErrorBox";
 
 const Favorites = () => {
     const favorites = useSelector(state => state.favorites);
-    console.log(favorites);
 
     return (
         <>
