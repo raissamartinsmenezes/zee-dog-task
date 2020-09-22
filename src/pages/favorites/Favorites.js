@@ -25,6 +25,7 @@ const Favorites = () => {
                     hasMovieDescription={false}
                 />
             ))}
+            {favorites.length === 0 && <div>não há favoritos</div>}
         </div>
         </>
     )
