@@ -40,7 +40,7 @@ Layout bem estruturado, com atenção à experiência do usuário | ✔️
 
 Diferenciais | Feito
 ---------- | ------
-Código com testes unitários (Jest) | ❌
+Código com testes unitários (Jest) | ⚠️
 Deploy para o Netlify ou Vercel com CI/CD | ✔️
 
 ## Construído com:
@@ -88,4 +88,56 @@ Deploy para o Netlify ou Vercel com CI/CD | ✔️
 - [Rootten Tomato - Ícone](https://commons.wikimedia.org/wiki/File:Rotten_Tomatoes.svg)
 - [Heart - Ícone](https://www.flaticon.com/free-icon/like_148836)
 
+## Instalando o projeto
+
+### Requisitos
+
+Para executar esse projeto você vai precisar do [NODE](https://nodejs.org/en/) instalado em seu computador, se você não tiver, você pode clicar no link que será redirecionado para a página de instalação do node, depois de instalar, o ambiente já estará pronto para você começar.
+
+### Instalação das dependências
+
+Faça o download do projeto clonando o repositório, entre no diretório `./zee-dog-task` e no terminal rode:
+
+```
+yarn install
+```
+
+para instalar todas as dependências do projeto, ou então rode:
+
+```
+npm install
+```
+se você estiver usando [npm](https://www.npmjs.com/) como gerenciador de pacotes.
+
+### Rodando o projeto
+
+Para rodar o projeto em modo de desenvolvimento, entre no diretório `./zee-dog-task` e no terminal rode:
+
+```
+yarn start
+```
+
+para abrir o [http://localhost:8080](http://localhost:8080) e ver o projeto no browser, ou:
+
+```
+npm start
+```
+
+se você estiver usando [npm](https://www.npmjs.com/) como gerenciador de pacotes.
+
+A página será recarregada se você fizer edições. Você também verá os erros no console.
+
+### Rodando os testes
+
+Para rodar os testes, entre no diretório `./zee-dog-task` e no terminal rode:
+
+```
+yarn test
+```
+
 ## Autora
+
+[Raissa Martins](https://www.linkedin.com/in/raissamartinsmenezes/) - Desenvolvedora Front-end 🖤
+
+
+
