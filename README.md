@@ -135,6 +135,13 @@ Para rodar os testes, entre no diretório `./zee-dog-task` e no terminal rode:
 yarn test
 ```
 
+ou então rode:
+
+```
+npm install
+```
+se você estiver usando [npm](https://www.npmjs.com/) como gerenciador de pacotes.
+
 ## Autora
 
 [Raissa Martins](https://www.linkedin.com/in/raissamartinsmenezes/) - Desenvolvedora Front-end 🖤
