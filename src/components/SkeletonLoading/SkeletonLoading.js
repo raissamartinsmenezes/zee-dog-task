@@ -3,10 +3,7 @@ import Skeleton from "react-loading-skeleton";
 import greyHeart from "../../../assets/grey-heart.svg";
 
 const SkeletonLoading = (props) => {
-    const { totalSkeleton } = props;
-
     return (
-        // totalSkeleton.map((i) => (
             <div className="card-movie">
                 <div>
                     <div className="card-movie--title">
@@ -28,7 +25,6 @@ const SkeletonLoading = (props) => {
                 </div>
                 <Skeleton height={30} width={100}/>
             </div>
-        // ))
     ); 
 };
 

@@ -8,6 +8,8 @@ import SkeletonLoading from "../../components/SkeletonLoading/SkeletonLoading";
 
 import { fetchMovies } from "../../store/slices/moviesSlice";
 
+const TOTAL_OF_SKELETONS = [1, 2, 3, 4];
+
 const Movies = () => {
     const movies = useSelector(state => state.movies);
     const { moviesList, isLoading, error } = movies;
@@ -26,7 +28,9 @@ const Movies = () => {
                 <GoToFavorites />
             </div>
             <div className="card-box">
-                {isLoading ? <SkeletonLoading /> :
+                {isLoading ? 
+                TOTAL_OF_SKELETONS.map((skeleton) => (<SkeletonLoading />)) 
+                :
                 moviesList.map((movie) => (
                     <CardMovie
                         key={movie.id}
