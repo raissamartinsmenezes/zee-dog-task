@@ -1,4 +1,6 @@
-# Zee.dog Task [![Netlify Status](https://api.netlify.com/api/v1/badges/d7098c4a-f3c3-447e-8478-21c74194e82c/deploy-status)](https://app.netlify.com/sites/zee-dog-test/deploys)
+# Zee.dog Task 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/abe83ae3-2d9e-4198-aa3f-8b52ce49aac4/deploy-status)](https://app.netlify.com/sites/zee-dog-task/deploys) 
 
 ## Requisitos 
 
@@ -39,7 +41,7 @@ Layout bem estruturado, com atenção à experiência do usuário | ✔️
 Diferenciais | Feito
 ---------- | ------
 Código com testes unitários (Jest) | ❌
-Deploy para o Netlify ou Vercel com CI/CD | ❌
+Deploy para o Netlify ou Vercel com CI/CD | ✔️
 
 ## Construído com:
 
@@ -48,10 +50,16 @@ Deploy para o Netlify ou Vercel com CI/CD | ❌
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
+    "@testing-library/react": "^11.0.4",
+    "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
+    "babel-preset-es2015": "^6.24.1",
     "css-loader": "^4.3.0",
     "html-loader": "^1.3.0",
     "html-webpack-plugin": "^4.4.1",
+    "jest": "^26.4.2",
+    "react-test-renderer": "^16.13.1",
+    "redux-devtools": "^3.7.0",
     "source-map-loader": "^1.1.0",
     "style-loader": "^1.2.1",
     "svg-url-loader": "^6.0.0",
@@ -60,10 +68,18 @@ Deploy para o Netlify ou Vercel com CI/CD | ❌
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/runtime": "^7.11.2",
+    "@reduxjs/toolkit": "^1.4.0",
+    "lodash": "^4.17.20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0"
-  }
+    "react-loading-skeleton": "^2.1.1",
+    "react-redux": "^7.2.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux-persist": "^6.0.0"
+  },
 ```
 
 ## Assets
@@ -72,4 +88,4 @@ Deploy para o Netlify ou Vercel com CI/CD | ❌
 - [Rootten Tomato - Ícone](https://commons.wikimedia.org/wiki/File:Rotten_Tomatoes.svg)
 - [Heart - Ícone](https://www.flaticon.com/free-icon/like_148836)
 
-
+## Autora
