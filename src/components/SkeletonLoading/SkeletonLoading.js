@@ -8,19 +8,18 @@ const SkeletonLoading = (props) => {
                 <div>
                     <div className="card-movie--title">
                         <div>
-                            <Skeleton height={50} width={100}/>
-                            <Skeleton height={50} width={50}/>
+                            <Skeleton height={50} width={150}/>
                         </div>
                         <img src={greyHeart} className="favorite-button"/>
                     </div>
                     <div className="movie-description">
-                        <Skeleton height={20} width={250}/>
-                        <Skeleton height={20} width={250}/>
-                        <Skeleton height={20} width={250}/>
-                        <Skeleton height={20} width={250}/>
-                        <Skeleton height={20} width={250}/>
-                        <Skeleton height={20} width={250}/>
-                        <Skeleton height={20} width={250}/>
+                        <Skeleton height={20} width={200}/>
+                        <Skeleton height={20} width={200}/>
+                        <Skeleton height={20} width={200}/>
+                        <Skeleton height={20} width={200}/>
+                        <Skeleton height={20} width={200}/>
+                        <Skeleton height={20} width={200}/>
+                        <Skeleton height={20} width={200}/>
                     </div>
                 </div>
                 <Skeleton height={30} width={100}/>
