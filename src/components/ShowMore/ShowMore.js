@@ -6,10 +6,9 @@ const ShowMore = (props) => {
     const { id } = props;
     
     return (
-        <Link to={{
-            pathname: `/detail/${id}`,
-            state: {movieId: id},
-        }} style={{ textDecoration: "none", color: "#0A0A0B" }}>
+        <Link 
+            to={{ pathname: `/detail/${id}` }} 
+            style={{ textDecoration: "none", color: "#0A0A0B" }}>
             <button className="show-more">See More →</button>
         </Link>
     ); 

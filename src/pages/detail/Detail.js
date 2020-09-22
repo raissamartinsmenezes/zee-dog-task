@@ -14,7 +14,8 @@ const selectPeopleByMovieId = (id) => (state) => {
 }; 
 
 const Detail = (location) => {
-    const id = location.location.state.movieId;
+    const pathname = location.location.pathname;
+    const id = pathname.split("/")[2];
     const movie = useSelector(selectMovieById(id));
     const people = useSelector(selectPeopleByMovieId(id));
     const dispatch = useDispatch();
