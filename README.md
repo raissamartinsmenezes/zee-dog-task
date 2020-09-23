@@ -2,6 +2,10 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/abe83ae3-2d9e-4198-aa3f-8b52ce49aac4/deploy-status)](https://app.netlify.com/sites/zee-dog-task/deploys) 
 
+![zee-dog-demo](./docs/zee-dog.gif)
+
+**[https://zee-dog-task.netlify.app](https://zee-dog-task.netlify.app)**
+
 ## Requisitos 
 
 ### Funcionalidades
